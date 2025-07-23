@@ -23,7 +23,7 @@ COPY --from=build /app/build /usr/share/nginx/html
 
 # Copy a custom Nginx configuration (optional, but good for single-page apps)
 # This handles client-side routing, ensuring all paths are served by index.html
-# COPY nginx.conf /etc/nginx/conf.d/default.conf
+COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 # Expose port 80 for Nginx
 EXPOSE 80
