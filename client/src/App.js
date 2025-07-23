@@ -14,7 +14,7 @@ const PrivateRoute = ({ children }) => {
         return <div>Loading...</div>; // Or a spinner
     }
 
-    return isAuthenticated ? children : <Navigate to="/login" replace />;
+    return isAuthenticated ? children : <Navigate to="/" replace />;
 };
 
 function App() {
